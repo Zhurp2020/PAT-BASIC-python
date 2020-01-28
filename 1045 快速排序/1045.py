@@ -3,14 +3,17 @@ nums = list(map(int,input().split()))
 MainList = []
 MaxNum = nums[0]
 
-for i in range(n-1) :
+for i in range(n) :
     if nums[i] >= MaxNum :
-        if min(nums[i+1:]) > nums[i]:
             MainList.append(nums[i])
-        MaxNum = nums[i]        
-if MaxNum < nums[-1] :
-    MainList.append(nums[-1])
-
+            MaxNum = nums[i]  
+    else : 
+        if len(MainList) != 0 :     
+            while nums[i] <= MainList[-1] :
+                MainList.remove(MainList[-1])  
+                if len(MainList) == 0 :
+                    break
+        
 print(len(MainList))
 for i in range(len(MainList)-1) :
     print(MainList[i],end=' ')
