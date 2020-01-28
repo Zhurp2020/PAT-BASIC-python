@@ -10,7 +10,7 @@ counta = countb = 0
 
 for i in range(n) :
     nums = list(map(int,input().split()))
-    result = whowin(nums[0],nums[1],nums[2],nums[3])
+    result = whowin(nums[0],nums[1],nums[2],nums[3])    
     if result == 'A' :
         countb += 1
     if result == 'B' :
