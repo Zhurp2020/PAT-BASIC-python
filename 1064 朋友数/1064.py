@@ -1,3 +1,4 @@
+
 n = int(input())
 nums = input().split()
 def sumnum(string) :
