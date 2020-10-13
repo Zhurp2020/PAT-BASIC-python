@@ -40,7 +40,3 @@ for i in ['B','C','J'] :
 print(win,nowin,n-win-nowin)
 print(n-win-nowin,nowin,win)
 print(awin,bwin)
-
-# 大家应该都会玩“锤子剪刀布”的游戏：两人同时给出手势，胜负规则如图所示：
-# 现给出两人的交锋记录，
-# 请统计双方的胜、平、负次数，并且给出双方分别出什么手势的胜算最大。
